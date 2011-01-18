@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load markup %}
+{% block css %}
+        <link rel="stylesheet" href="{{ CSS_PATH }}flatpages.css" type="text/css" />
+{% endblock %}
+{% block content %}
+<div id="interna">
+    <div class="degrade">
+        <div class="lefttopborder">
+        </div>
+        <div class="righttopborder">
+        </div>
+    <h2>{{ flatpage.title }}</h2>
+    </div>
+    <div id="interna_content">
+        {{ flatpage.content|markdown }}
+    </div>
+    <div class="bottom">
+        <div class="leftbottomborder">
+        </div>
+        <div class="rightbottomborder">
+        </div>
+    </div>
+{% endblock %}
+</div>

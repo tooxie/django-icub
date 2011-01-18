@@ -1,0 +1,67 @@
+/* Cascade Style Sheet */
+div#interna {
+    background-image: url('../interna_background.jpg');
+    background-repeat: repeat-y;
+    width: 770px;
+    *height: 38px;
+    min-height: 38px;
+    margin-left: 15px;
+}
+.degrade {
+    background-image: url('../interna_degrade.jpg');
+    background-repeat: repeat-x;
+    height: 38px;
+    margin: 0 auto;
+    margin-left: 2px;
+}
+.lefttopborder {
+    float: left;
+    clear: none;
+    background-image: url('../interna_lefttop.jpg');
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 38px;
+}
+.righttopborder {
+    float: right;
+    clear: none;
+    background-image: url('../interna_righttop.jpg');
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 38px;
+}
+div#interna .degrade h2 {
+    font-family: "Times New Roman";
+    font-size: 38px;
+    color: #72BB45;
+    margin: 0;
+    padding-top: 10px;
+}
+h3, h4, h5, h6 {
+    text-align: center;
+}
+div#interna_content {
+    width: 93%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.bottom {
+    background-image: url('../interna_bottom.jpg');
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    height: 40px;
+}
+.leftbottomborder, .rightbottomborder {
+    clear: none;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+.leftbottomborder {
+    float: left;
+    background-image: url('../interna_leftbottom.jpg');
+}
+.rightbottomborder {
+    float: right;
+    background-image: url('../interna_rightbottom.jpg');
+}

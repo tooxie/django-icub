@@ -1,0 +1,8 @@
+/* Cascade Style Sheet */
+body {
+    font-family: "arial", serif;
+    font-size: 12px;
+}
+.menu {
+    display: none;
+}

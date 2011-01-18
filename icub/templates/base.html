@@ -1,0 +1,55 @@
+{% load render_menu folders %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>ICUB - icub.edu.uy</title>
+        <link rel="stylesheet" media="screen" href="{{ CSS_PATH }}layout.css" type="text/css" />
+        <link rel="stylesheet" media="print" href="{{ CSS_PATH }}print.css" type="text/css" />
+        {% block css %}{% endblock %}
+        <meta name="Title" content="ICUB - icub.edu.uy" />
+        <meta name="Author" content="Alvaro Mouriño" />
+        <!-- email alvaro arroba mourino.net -->
+        <meta name="Subject" content="Instituto Cultural Uruguayo Brasileño" />
+        <meta name="Description" content="Sitio oficial del Instituto Cultural Uruguayo Brasileño" />
+        <meta name="Keywords" content="instituto,cultura,uruguay,brasil,educacion,portugues" />
+        <meta name="Generator" content="Vi IMproved 7.1" />
+        <meta name="Language" content="Spanish" />
+        <meta name="Revisit" content="15 days" />
+        <meta name="Distribution" content="Local" />
+        <meta name="Robots" content="All" />
+        {% block javascript %}{% endblock %}
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <h1><a href="/" id="headerlink" title="Volver al inicio"><span id="home">Instituto de Cultura Uruguayo-Brasile&ntilde;o</span></a></h1>
+            </div>
+            <div id="degrade_top">
+                <!-- Silence is golden -->
+            </div>
+            <div id="main_wrapper">
+                <div id="main">
+                    <div class="menu">
+                        {% render_menu Principal %}
+                        <div id="banners">
+                            {% render_folders %}
+                        </div>
+                    </div>
+                    <div id="content">
+                        {% block content %}http://www.icub.edu.uy/{% endblock %}
+                    </div>
+                    <!-- {% render_menu Footer %} -->
+                    <p class="widebanners">
+                        <!-- <a href="http://debianday.debianuruguay.org/" title="Debian Day Uruguay"><img src="{{ MEDIA_PATH }}banners/debianday.jpg" alt="Debian Day Uruguay" /></a> -->
+                    </p>
+                </div>
+            </div>
+            <div id="degrade_bottom">
+                <!-- Silence is golden -->
+            </div>
+            <div id="footer">
+                <!-- Silence is golden -->
+            </div>
+        </div>
+    </body>
+</html>

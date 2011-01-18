@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block css %}
+        <link rel="stylesheet" href="{{ CSS_PATH }}home.css" type="text/css" />
+{% endblock %}
+{% load markup %}
+    {% block content %}
+                        <!-- mininews -->
+                        <div class="miniwrapper">
+                            <!-- mininews/cursos -->
+                            <div class="minibg">
+                                <div class="minitopcontent">
+                                    <div class="minicontentwrapper">
+                                        <div class="minimask">
+                                        </div>
+                                        <div class="minicontent">
+                                            <h3>Cursos</h3>
+                                            {{ cursos|markdown }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="minitopfoot">
+                            </div>
+                            <!-- /mininews/cursos -->
+
+                            <!-- mininews/certificaciones -->
+                            <div class="minibg">
+                                <div class="minimidcontent">
+                                    <div class="minicontentwrapper">
+                                        <div class="minimask">
+                                        </div>
+                                        <div class="minicontent">
+                                            <h3>Certificaciones</h3>
+                                            {{ certificaciones|markdown }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="minimidfoot">
+                            </div>
+                            <!-- /mininews/certificaciones -->
+
+                            <!-- mininews/biblioteca -->
+                            <!--
+                            <div class="minibg">
+                                <div class="minibotcontent">
+                                    <div class="minicontentwrapper">
+                                        <div class="minimask">
+                                        </div>
+                                        <div class="minicontent">
+                                            <h3>Biblioteca</h3>
+                                            {{ biblioteca|markdown }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="minibotfoot">
+                            </div>
+                            -->
+                            <!-- /mininews/biblioteca -->
+                        </div>
+                        <!-- /mininews -->
+                        <!-- noticias -->
+                        <div class="mainwrapper">
+                            <div class="maintitle">
+                            </div>
+                            <div id="blockmain">
+                                <h2>Noticias</h2>
+                                {{ noticias|markdown }}
+                            </div>
+                            <div class="mainfooter">
+                            </div>
+                        </div>
+                        <!-- /noticias -->
+<!--
+Como funciona el layout?
+* minigb se encarga de desplegar el fondo del contenido, es decir, los border laterales y su respectiva sombra.
+-->
+    {% endblock %}

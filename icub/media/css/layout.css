@@ -1,0 +1,127 @@
+/* Cascade Style Sheer */
+body {
+    text-align: center;
+    padding: 0;
+    font-family: "arial", serif;
+    font-size: 12px;
+    margin: 20px auto;
+}
+a:link, a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+    background-color: transparent;
+}
+a:hover, a:visited:hover {
+    color: #72BB45;
+    background-color: transparent;
+}
+img {
+    border: 0;
+    margin: 0;
+}
+/* Para imágenes con borde */
+img.bordered {
+    border: 2px solid black;
+}
+span#home {
+    display: none;
+}
+/* Un wrapper de toda la página */
+#wrapper {
+    margin:0 auto 0 auto;
+    width: 1000px;
+    text-align: left;
+}
+#header, #degrade_top, #degrade_bottom, #footer {
+    margin: 0;
+    padding: 0;
+}
+/* Seteo el tamaño del div header y del link, pique MUY útil */
+div#header, a#headerlink {
+    width: 1000px;
+    height: 130px;
+    display: block;
+}
+/* Levanto el cabezal */
+div#header {
+    background-image: url('../header.jpg');
+    background-repeat: no-repeat;
+}
+/* Degradé del body */
+div#degrade_top {
+    width: 1000px;
+    height: 59px;
+    background-image: url('../degtop.png');
+}
+/* Un wrapper para el color de fondo */
+div#main_wrapper {
+    background-image: url('../bgcolor.png');
+    background-repeat: repeat-y;
+}
+div#main {
+    margin: 0;
+    width: 100%;
+    padding-left: 15px;
+    *padding-left: 0;
+    overflow: hidden;
+    padding-top: 0;
+}
+div.menu {
+    display: block;
+    float: left;
+    clear: none;
+    width: 160px;
+}
+div#content {
+    display: block;
+    float: right;
+    width: 798px;
+    padding-left: 20px;
+    *padding-left: 0;
+    margin-right: 20px;
+    *margin-right: 2px;
+}
+div#degrade_bottom {
+    width: 1000px;
+    height: 60px;
+    background-image: url('../bottom.png');
+}
+div#footer {
+    width: 1000px;
+    height: 57px;
+    background-image: url('../footer.png');
+}
+ul.Principal {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+ul.Principal li {
+    width: 180px;
+    height: 34px;
+    background-image: url('../botones.jpg');
+    background-repeat: no-repeat;
+    list-style-type: none;
+}
+ul.Principal li a {
+    display: block;
+    width: 160px;
+    height: 24px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+div#logo {
+    width: 180px;
+    margin-top: 10px;
+    text-align: center;
+}
+.widebanners {
+    text-align: center;
+}
+
+#banners {
+    margin-top: 15px;
+    text-align: center;
+    width: 180px;
+}
